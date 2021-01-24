@@ -4,8 +4,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router' //引入路由配置
-import './icon'
 import store from './store/login/store' //引入 Vuex 状态管理
+
+import './icon'
 // 完整引入 ElementUI
 import ElementUI from 'element-ui'
 //样式文件，需单独引入
@@ -13,14 +14,14 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ElementUI)
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
 
 /* eslint-disable no-new */
 new Vue({
   render: h => h(App),
   el: '#app',
-  router, //使用路由配置
+  router, //把路由配置放到 vue实例中
   store,//使用 Vuex 进行状态管理
   // 组件
   components: {App},
