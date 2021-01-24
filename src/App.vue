@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <!-- 路由的出入口，路由的内容将被显示在这里 -->
+    <!--通过 router 将组件 显示在 router-view 标签处。 -->
     <router-view/>
   </div>
 </template>
@@ -21,4 +21,13 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+/* 解决子组件中 height: 100% 不生效问题 */
+html,body,#app{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 </style>
