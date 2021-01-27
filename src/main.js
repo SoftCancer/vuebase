@@ -3,7 +3,7 @@
 
 import Vue from 'vue'
 import App from './App'
-import router from './router' //引入路由配置
+import router from './router/index' //引入路由配置
 import store from './store/login/store' //引入 Vuex 状态管理
 
 import './icon'

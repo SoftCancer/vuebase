@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import success from '@/views/login/success'
+import home from '@/views/home/home'
 
 Vue.use(Router)
 
@@ -17,6 +18,7 @@ export const constantRouterMap = [
   //配置登录成功页面，使用时需要使用 path 路径来实现跳转,
   // component:success 的实现还可以使用 ：component: () => import('@/views/login/success')
   { path: '/success', component: success},
+  { path: '/home', component: home},
 
   //配置登录失败页面，使用时需要使用 path 路径来实现跳转
   { path: '/error', component: () => import('@/views/login/error'), hidden: true }
