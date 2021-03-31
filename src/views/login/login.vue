@@ -82,8 +82,7 @@
         this.$refs.loginForm.validate(valid => {
           if (valid) {
             this.loading = true;
-            this.$store
-              .dispatch("Login", this.loginForm)
+            this.$store.dispatch("Login", this.loginForm)
               .then(response => {
                 this.loading = false;
                 let code = response.data.code;

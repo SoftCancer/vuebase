@@ -46,14 +46,15 @@
 </template>
 <script>
   import UpdatePassword from './UpdatePassword.vue'
-  import img_url from '@/assets/gif/12.jpg'
+  import img_url from '../../assets/gif/12.jpg'
+
   export default {
     name: 'Header',
     data() {
       return {
         // imgUrl:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2574324515,2446667376&fm=26&gp=0.jpg",
         imgUrl:img_url,
-        // imgUrl:require('@/assets/gif/12.jpg'),
+        // imgUrl:require('../../assets/gif/12.jpg'),
         // 是否展开侧边栏
         foldAside: true,
         // 默认用户名
